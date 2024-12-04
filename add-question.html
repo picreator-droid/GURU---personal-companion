@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Add a New Question</h2>
+        <form id="questionForm">
+            <div class="mb-3">
+                <label for="contentHindi" class="form-label">Question in Hindi</label>
+                <textarea class="form-control" id="contentHindi" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="contentEnglish" class="form-label">Question in English</label>
+                <textarea class="form-control" id="contentEnglish" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select class="form-select" id="category" required>
+                    <option value="">Select a Category</option>
+                    <option value="Shloka">Shloka</option>
+                    <option value="Science">Science</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
