@@ -14,10 +14,12 @@
             <div class="mb-3">
                 <label for="contentHindi" class="form-label">Question in Hindi</label>
                 <textarea class="form-control" id="contentHindi" rows="3" required></textarea>
+                <div class="invalid-feedback">Please enter the question in Hindi.</div>
             </div>
             <div class="mb-3">
                 <label for="contentEnglish" class="form-label">Question in English</label>
                 <textarea class="form-control" id="contentEnglish" rows="3" required></textarea>
+                <div class="invalid-feedback">Please enter the question in English.</div>
             </div>
             <div class="mb-3">
                 <label for="category" class="form-label">Category</label>
@@ -26,7 +28,21 @@
                     <option value="Shloka">Shloka</option>
                     <option value="Science">Science</option>
                 </select>
+                <div class="invalid-feedback">Please select a category.</div>
             </div>
+            <div class="mb-3">
+                <label for="contentHindi" class="form-label">Question in Hindi</label>
+                <textarea class="form-control" id="contentHindi" rows="3" required></textarea>
+                <small id="hindiCharCount" class="form-text text-muted">0 characters</small>
+                <div class="invalid-feedback">Please enter the question in Hindi.</div>
+            </div>
+            <div class="mb-3">
+                <label for="contentEnglish" class="form-label">Question in English</label>
+                <textarea class="form-control" id="contentEnglish" rows="3" required></textarea>
+                <small id="englishCharCount" class="form-text text-muted">0 characters</small>
+                <div class="invalid-feedback">Please enter the question in English.</div>
+            </div>
+            
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
